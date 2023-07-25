@@ -23,13 +23,13 @@ export default async function Project({params}: Props) {
           rel="noopener noreferrer"
           className="bg-gray-100 rounded-lg text-gray-500 font-bold py-3 px-4 whitespace-nowrap hover:bg-gray-200 transition cursor-pointer"
         >
-            Project
+            Live Project
         </a>
       </header>
 
 
       {/* Content goes here */}
-      <div className="text-lg text-gray-700 mt-5"><PortableText value={project.content} /></div>
+      <div className="text-lg text-gray-700 mt-5 prose lg:prose-xl"><PortableText value={project.content} /></div>
 
       {/* Image goes here */}
       <Image

@@ -8,8 +8,8 @@ export default async function Home() {
 
   return (
     <div>
-      <h1 className='text-7xl font-extrabold bg-gradient-to-r from-orange-400 via-red-600 to-purple-500 bg-clip-text text-transparent py-10'>Icarus Imagery</h1>
-      <p className='mt-3 text-xl text-gray-600'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam error et repudiandae laborum, natus fugiat! Nostrum iste dolores, harum facere facilis excepturi, numquam maiores cum quis accusamus officiis nam temporibus.</p>
+      <h1 className='text-7xl font-extrabold bg-gradient-to-r from-orange-400 via-red-600 to-purple-500 bg-clip-text text-transparent py-10'>Welcome!</h1>
+      <p className='mt-3 text-xl text-gray-600'>I'm Leo and I'm a full-stack web developer. This is my portfolio page housing selected works.</p>
       <h2 className='mt-24 font-bold text-gray-700 text-3xl'>Projects</h2>
 
       <div className='mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
