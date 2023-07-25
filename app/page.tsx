@@ -7,7 +7,7 @@ export default async function Home() {
   const projects = await getProjects();
 
   return (
-    <div className="max-w-5xl mx-auto py-20">
+    <div>
       <h1 className='text-7xl font-extrabold bg-gradient-to-r from-orange-400 via-red-600 to-purple-500 bg-clip-text text-transparent py-10'>Icarus Imagery</h1>
       <p className='mt-3 text-xl text-gray-600'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam error et repudiandae laborum, natus fugiat! Nostrum iste dolores, harum facere facilis excepturi, numquam maiores cum quis accusamus officiis nam temporibus.</p>
       <h2 className='mt-24 font-bold text-gray-700 text-3xl'>Projects</h2>
