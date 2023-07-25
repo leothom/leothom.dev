@@ -1,3 +1,4 @@
+import { getPages } from '@/sanity/sanity-utils';
 import '../globals.css';
 import type { Metadata } from 'next'
 import Link from 'next/link';
@@ -7,21 +8,38 @@ export const metadata: Metadata = {
   description: 'Beauty and Fashion Photography Studio based in Hong Kong',
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+
+  // get all pages
+  const pages = await getPages();
+
+
+
   return (
     <html lang="en">
       <body className="max-w-3xl mx-auto py-10">
-        <header>
+        <header className="flex items-center justify-between">
           <Link 
             href="/"
             className="bg-gradient-to-r from-orange-400 via-red-600 to-purple-500 bg-clip-text text-transparent text-2xl font-extrabold"
           >
-            SHOTBYLEO
+            LEOTHOM.DEV
           </Link>
+          <div className="flex items-center gap-5 text-sm text-gray-600">
+            {pages.map((page) => (
+              <Link 
+                key={page._id}
+                href={`/${page.slug}`}
+                className='hover:text-gray-900 hover:underline'
+              >
+                {page.title}
+              </Link>
+            ))}
+          </div>
         </header>
         <main className='py-20'>{children}</main>
       </body>
