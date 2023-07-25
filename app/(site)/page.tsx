@@ -9,7 +9,12 @@ export default async function Home() {
   return (
     <div>
       <h1 className='text-7xl font-extrabold bg-gradient-to-r from-orange-400 via-red-600 to-purple-500 bg-clip-text text-transparent py-10'>Welcome!</h1>
-      <p className='mt-3 text-xl text-gray-600'>I'm Leo and I'm a full-stack web developer. This is my portfolio page housing selected works.</p>
+      <p className='mt-3 text-xl text-gray-600'>
+      I&apos;m Leo and I&apos;m a full-stack web developer, with a track record of creating impactful digital experiences. I&apos;m passionate about building beautiful, functional, and accessible websites and applications, and I&apos;m always looking for new opportunities to learn and grow.
+      </p>
+      <p className='mt-3 text-xl text-gray-600'>I strive to bridge the gap between technology and user experience, delivering solutions that are efficient, intuitive, and user-friendly.</p>
+      <p className='mt-3 text-xl text-gray-600'>This portfolio website is built with Next.js, Tailwind CSS, Typescript and Sanity.io</p>
+
       <h2 className='mt-24 font-bold text-gray-700 text-3xl'>Projects</h2>
 
       <div className='mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
