@@ -33,3 +33,7 @@ export async function getProject(slug: string): Promise<Project> {
   )
 
 }
+
+export async function getPages(){}
+
+export async function getPage(slug){}
