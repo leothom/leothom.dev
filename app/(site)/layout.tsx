@@ -4,8 +4,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'SHOTBYLEO - Photographer based in Hong Kong',
-  description: 'Beauty and Fashion Photography Studio based in Hong Kong',
+  title: 'Leo Thom is a full-stack developer based in Hong Kong',
+  description: 'Leo Thom is a full-stack developer based in Hong Kong',
 }
 
 export default async function RootLayout({
