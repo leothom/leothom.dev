@@ -21,7 +21,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className="max-w-3xl mx-auto py-10">
+      <body className="max-w-3xl mx-auto py-10 bg-[#F5F5F5]">
         <header className="flex items-center justify-between">
           <Link 
             href="/"
