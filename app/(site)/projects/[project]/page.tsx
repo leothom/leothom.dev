@@ -1,6 +1,12 @@
 import { getProject } from "@/sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
+import Link from "next/link";
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 
 type Props = {
   params: { project: string }
@@ -42,7 +48,19 @@ export default async function Project({params}: Props) {
       </a>
 
       {/* Content goes here */}
-      <div className="text-lg text-gray-700 dark:text-gray-200 mt-5 prose dark:prose-invert lg:prose-xl"><PortableText value={project.content} /></div>
+      <div className="text-lg text-gray-700 dark:text-gray-200 mt-5 prose dark:prose-invert lg:prose-xl">
+        
+          {project.github && (
+            <p className='mt-6 text-xl'>
+            <FontAwesomeIcon icon={faCodeBranch} className="text-gray-600 dark:text-gray-300 mr-2" />
+            <Link href={project.github} target="_blank" className='hover:text-gray-900 hover:underline underline'>
+              GitHub Repo
+            </Link>
+            </p>
+          )}
+        
+        <PortableText value={project.content} />
+      </div>
     </div>
 
   );
