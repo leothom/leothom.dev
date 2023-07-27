@@ -1,3 +1,7 @@
+import Link from "next/link";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
+
 export default async function Home() {
 
 
@@ -10,6 +14,8 @@ export default async function Home() {
       <p className='mt-6 text-xl'>As a former online marketer and product manager, I transitioned to programming to get closer to the product and end-user.</p> 
       <p className='mt-6 text-xl'>I seek to bridge the gap between technology and joyful user experiences - delivering solutions that are efficient, intuitive, and user-friendly.</p>
       <p className='mt-6 text-xl'>This portfolio website is built with Next.js, Tailwind CSS, Typescript and Sanity.io</p>
+      <p className='mt-6 text-xl'><FontAwesomeIcon icon={faCode} className="text-gray-600 dark:text-gray-300 mr-2" /><Link href="https://github.com/leothom/leothom.dev" target="_blank" className='hover:text-gray-900 hover:underline underline'>GitHub Repo for this website</Link></p>
+      
     </div>
   );
 }
