@@ -24,7 +24,7 @@ export default async function RootLayout({
         <header className="flex items-center justify-between">
           <Link 
             href="/"
-            className="bg-gradient-to-r from-orange-400 via-red-600 to-purple-500 bg-clip-text text-transparent text-2xl font-extrabold"
+            className="bg-gradient-to-r from-orange-400 via-red-600 to-purple-500 dark:from-blue-700 dark:via-gray-500 dark:to-white bg-clip-text text-transparent text-2xl font-extrabold"
           >
             LEOTHOM.DEV
           </Link>
