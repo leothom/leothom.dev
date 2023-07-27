@@ -1,4 +1,4 @@
-# Leothom.dev - Portfolio Website
+# LeoThom.dev - Portfolio Website
 
 LeoThom.dev is the portfolio website from Leo Thom, a developer.
 
