@@ -12,7 +12,7 @@ export default async function Home() {
       <p className='mt-3 text-xl text-gray-600'>
       I&apos;m Leo and I&apos;m a front-end web developer, with a track record of creating impactful digital experiences for millions of users.
       </p>
-      <p className='mt-6 text-xl text-gray-600'>I strive to bridge the gap between elegant technology and a joyful user experience, delivering solutions that are efficient, intuitive, and user-friendly.</p>
+      <p className='mt-6 text-xl text-gray-600'>As a former online marketer and product manager, I transitioned to programming to bridge the gap between elegant technology and joyful user experiences - delivering solutions that are efficient, intuitive, and user-friendly.</p>
       <p className='mt-6 text-xl text-gray-600'>This portfolio website is built with Next.js, Tailwind CSS, Typescript and Sanity.io</p>
 
       <h2 className='mt-24 font-bold text-gray-700 text-3xl'>Projects</h2>
