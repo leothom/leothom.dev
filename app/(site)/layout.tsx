@@ -40,6 +40,7 @@ export default async function RootLayout({
                 {page.title}
               </Link>
             ))}
+            <Link href="mailto:work@leothom.com" target='_blank' >Contact</Link>
           </div>
         </header>
         <main className='py-20'>{children}</main>
