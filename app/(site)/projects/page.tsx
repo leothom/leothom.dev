@@ -1,4 +1,3 @@
-import React from 'react'
 import { getProjects } from "@/sanity/sanity-utils";
 import Link from 'next/link';
 import Image from "next/image";
