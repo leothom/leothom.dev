@@ -50,10 +50,10 @@ export default async function Project({params}: Props) {
       {/* Content goes here */}
       <div className="text-lg text-gray-700 dark:text-gray-200 mt-5 prose dark:prose-invert lg:prose-xl">
         
-          {project.github && (
+          {project.githuburl && (
             <p className='mt-6 text-xl'>
             <FontAwesomeIcon icon={faCodeBranch} className="text-gray-600 dark:text-gray-300 mr-2" />
-            <Link href={project.github} target="_blank" className='hover:text-gray-900 hover:underline underline'>
+            <Link href={project.githuburl} target="_blank" className='hover:text-gray-900 hover:underline underline'>
               GitHub Repo
             </Link>
             </p>
