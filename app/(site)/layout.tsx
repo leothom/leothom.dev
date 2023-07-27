@@ -30,6 +30,7 @@ export default async function RootLayout({
             LEOTHOM.DEV
           </Link>
           <div className="flex items-center gap-5 text-sm text-gray-600">
+            <Link href="https://read.cv/leothom" target='_blank' >My CV</Link>
             {pages.map((page) => (
               <Link 
                 key={page._id}
