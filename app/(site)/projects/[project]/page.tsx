@@ -16,7 +16,7 @@ export default async function Project({params}: Props) {
     
     <div className="text-gray-700 dark:text-gray-200">
       <header className="flex justify-between items-center">
-        <h1 className="bg-gradient-to-r from-orange-400 via-red-600 to-purple-500 dark:from-blue-700 dark:via-gray-500 dark:to-white bg-clip-text text-transparent text-5xl drop-shadow font-extrabold py-2 mr-10">{project.name}</h1>
+        <h1 className="text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-orange-400 via-red-600 to-purple-500 dark:from-blue-700 dark:via-gray-500 dark:to-white bg-clip-text text-transparent md:py-10 py-5 mr-10">{project.name}</h1>
         <a 
           href={project.url} 
           target="_blank" 
