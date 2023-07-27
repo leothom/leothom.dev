@@ -15,7 +15,7 @@ export default async function Home() {
       <p className='mt-6 text-xl'>I seek to bridge the gap between technology and joyful user experiences - delivering solutions that are efficient, intuitive, and user-friendly.</p>
       <p className='mt-6 text-xl'>This portfolio website is built with Next.js, Tailwind CSS, Typescript and Sanity.io</p>
 
-      <h2 className='mt-24 font-bold text-gray-700 dark:text-gray-200 text-3xl'>Projects</h2>
+      <h2 id="projects" className='mt-24 font-bold text-gray-700 dark:text-gray-200 text-3xl'>Projects</h2>
 
       <div className='mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
       {projects.map((project) => (

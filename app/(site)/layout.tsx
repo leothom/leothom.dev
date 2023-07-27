@@ -40,6 +40,7 @@ export default async function RootLayout({
                   {page.title}
                 </Link>
               ))}
+              <Link href="#projects" className='hover:text-gray-900 hover:underline'>Projects</Link>
               <Link href="mailto:work@leothom.com" target='_blank' className='hover:text-gray-900 hover:underline'>Contact</Link>
               <DarkModeToggle />
             </div>
