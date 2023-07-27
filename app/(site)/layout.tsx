@@ -30,7 +30,7 @@ export default async function RootLayout({
           </Link>
           <div id="right" className="flex justify-center">
             <div className="flex items-center gap-5 text-sm text-gray-600 dark:text-gray-300">
-              <Link href="https://read.cv/leothom" target='_blank' >CV</Link>
+              <Link href="https://read.cv/leothom" target='_blank' className='hover:text-gray-900 hover:underline'>CV</Link>
               {pages.map((page) => (
                 <Link 
                   key={page._id}
@@ -40,7 +40,7 @@ export default async function RootLayout({
                   {page.title}
                 </Link>
               ))}
-              <Link href="mailto:work@leothom.com" target='_blank' >Contact</Link>
+              <Link href="mailto:work@leothom.com" target='_blank' className='hover:text-gray-900 hover:underline'>Contact</Link>
               <DarkModeToggle />
             </div>
           </div>
