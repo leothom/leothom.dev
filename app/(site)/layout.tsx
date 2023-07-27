@@ -2,6 +2,7 @@ import { getPages } from '@/sanity/sanity-utils';
 import '../globals.css';
 import type { Metadata } from 'next'
 import Link from 'next/link';
+import DarkModeToggle from './DarkModeToggle';
 
 export const metadata: Metadata = {
   title: 'Leo Thom is a full-stack developer based in Hong Kong',
@@ -17,11 +18,9 @@ export default async function RootLayout({
   // get all pages
   const pages = await getPages();
 
-
-
   return (
     <html lang="en">
-      <body className="max-w-3xl mx-auto py-10 bg-[#F5F5F5]">
+      <body className="max-w-3xl mx-auto p-10">
         <header className="flex items-center justify-between">
           <Link 
             href="/"
@@ -29,7 +28,7 @@ export default async function RootLayout({
           >
             LEOTHOM.DEV
           </Link>
-          <div className="flex items-center gap-5 text-sm text-gray-600">
+          <div className="flex items-center gap-5 text-sm text-gray-600 dark:text-gray-300">
             <Link href="https://read.cv/leothom" target='_blank' >My CV</Link>
             {pages.map((page) => (
               <Link 
@@ -41,6 +40,7 @@ export default async function RootLayout({
               </Link>
             ))}
             <Link href="mailto:work@leothom.com" target='_blank' >Contact</Link>
+            <DarkModeToggle />
           </div>
         </header>
         <main className='py-20'>{children}</main>
