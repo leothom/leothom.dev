@@ -32,7 +32,7 @@ export default async function Home() {
               height={300}
             />
           )}
-          <div className='font-extrabold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent mt-2 p-2'>{project.name}</div>
+          <div className='font-extrabold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 dark:from-white dark:to-white bg-clip-text text-transparent mt-2 p-2'>{project.name}</div>
         </Link>
       ))}
       </div>
