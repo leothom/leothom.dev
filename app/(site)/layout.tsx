@@ -3,6 +3,7 @@ import '../globals.css';
 import type { Metadata } from 'next'
 import Link from 'next/link';
 import DarkModeToggle from './DarkModeToggle';
+import Providers from './providers';
 
 export const metadata: Metadata = {
   title: 'Leo Thom is a full-stack developer based in Hong Kong',
@@ -21,6 +22,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className="max-w-3xl mx-auto p-10">
+        <Providers>
         <header className="flex items-center justify-between">
           <Link 
             href="/"
@@ -47,6 +49,7 @@ export default async function RootLayout({
           </div>
         </header>
         <main className='py-10 md:py-20'>{children}</main>
+        </Providers>
       </body>
     </html>
   )
