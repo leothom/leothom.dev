@@ -12,13 +12,9 @@ export default function ThemeSwitcher() {
         <button onClick={() => setTheme('light')}>
           <FontAwesomeIcon icon={faSun} className="text-yellow-500" />
         </button>
-      ) : theme === 'light' ? (
+      ) : (
         <button onClick={() => setTheme('dark')}>
           <FontAwesomeIcon icon={faMoon} className="text-blue-500" />
-        </button>
-      ) : (
-        <button onClick={() => setTheme('system')}>
-          <FontAwesomeIcon icon={faAdjust} className="text-gray-500" />
         </button>
       )}
     </div>
