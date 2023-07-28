@@ -2,7 +2,7 @@ import { getProjects } from "@/sanity/sanity-utils";
 import Link from 'next/link';
 import Image from "next/image";
 
-async function ProjectGrid() {
+export default async function ProjectGrid() {
 
   const projects = await getProjects();
 
@@ -32,5 +32,3 @@ async function ProjectGrid() {
     </>
   )
 }
-
-export default ProjectGrid
