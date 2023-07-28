@@ -2,8 +2,8 @@ import { getPages } from '@/sanity/sanity-utils';
 import '../globals.css';
 import type { Metadata } from 'next'
 import Link from 'next/link';
-import DarkModeToggle from './DarkModeToggle';
 import Providers from './providers';
+import ThemeSwitcher from './ThemeSwitcher';
 
 export const metadata: Metadata = {
   title: 'Leo Thom is a full-stack developer based in Hong Kong',
@@ -44,7 +44,7 @@ export default async function RootLayout({
                 </Link>
               ))}
               <Link href="mailto:work@leothom.com" target='_blank' className='hover:text-gray-900 hover:underline'>Contact</Link>
-              <DarkModeToggle />
+              <ThemeSwitcher />
             </div>
           </div>
         </header>
