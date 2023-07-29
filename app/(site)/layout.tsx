@@ -20,9 +20,9 @@ export default async function RootLayout({
   const pages = await getPages();
 
   return (
-    <html lang="en">
+    <html lang="en" className='dark bg-gray-800'>
       <body className="max-w-3xl mx-auto p-10">
-        <Providers>
+        {/* <Providers> */}
         <header className="flex items-center justify-between">
           <Link 
             href="/"
@@ -44,12 +44,14 @@ export default async function RootLayout({
                 </Link>
               ))}
               <Link href="mailto:work@leothom.com" target='_blank' className='hover:text-gray-900 hover:underline'>Contact</Link>
-              <ThemeSwitcher />
+              {/* <ThemeSwitcher /> */}
             </div>
           </div>
         </header>
         <main className='py-10 md:py-20'>{children}</main>
-        </Providers>
+        {/* </Providers> */}
+        <div class="gradient" className='h-screen'></div>
+        <div class="mask-demo"></div>
       </body>
     </html>
   )
