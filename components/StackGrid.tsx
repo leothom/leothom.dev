@@ -22,9 +22,9 @@ export default function StackGrid() {
 
   return (
     
-    <div className="h-screen justify-center">
+    <div className="min-h-screen justify-center">
       <h1 className='text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-orange-400 via-red-600 to-purple-500 dark:from-blue-700 dark:via-gray-500 dark:to-white bg-clip-text text-transparent'>Stack</h1>
-      <div className='mt-10 grid grid-cols-3 lg:grid-cols-4 gap-4 align-middle'>
+      <div className='mt-10 grid grid-cols-3 lg:grid-cols-4 gap-4 align-middle items-center'>
       {stack.map((stackItem, index) => (
           stackItem.image && (
             <motion.img
