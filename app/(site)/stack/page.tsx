@@ -1,5 +1,7 @@
+"use client"
 import { getStack } from "@/sanity/sanity-utils";
 import Image from "next/image";
+import { motion } from "framer-motion"
 
 export default async function StackGrid() {
   const stack = await getStack();
@@ -10,13 +12,19 @@ export default async function StackGrid() {
       <div className='mt-10 grid grid-cols-3 lg:grid-cols-4 gap-4 align-middle'>
       {stack.map((stackItem) => (
           stackItem.image && (
-              <Image
-                src={stackItem.image}
-                alt={stackItem.name}
-                className='object-cover py-5'
-                width={75}
-                height={75}
-              />
+              <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: .5 }}
+              >
+                <Image
+                  src={stackItem.image}
+                  alt={stackItem.name}
+                  className='object-cover py-5'
+                  width={75}
+                  height={75}
+                />
+              </motion.div>
           )
       ))}
       </div>
