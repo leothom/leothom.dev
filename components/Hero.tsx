@@ -4,6 +4,8 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCodeBranch } from '@fortawesome/free-solid-svg-icons';
+import React from 'react';
+import { SocialIcon } from 'react-social-icons';
 
 function Hero() {
   return (
@@ -12,8 +14,50 @@ function Hero() {
       <p className='mt-3 text-xl'>
         I&apos;m a front-end web developer and studio photographer based in Hong Kong.
       </p>
-      <p className='mt-6 text-xl'>As a former online marketer and product manager, I transitioned to programming to get closer to the product and end-user.</p> 
-      <p className='mt-6 text-xl'><FontAwesomeIcon icon={faCodeBranch} className="text-gray-600 dark:text-gray-300 mr-2" /><Link href="https://github.com/leothom/" target="_blank" className='hover:text-gray-900 hover:underline underline'>GitHub Profile</Link></p>
+      <p className='mt-6 text-xl'>
+        As a former online marketer and product manager, I transitioned to programming to get closer to the product and end-user.
+      </p>
+
+      <div className='mt-6' id="social">
+      
+        <SocialIcon 
+          url="https://github.com/leothom" 
+          fgColor='white' 
+          bgColor='transparent'
+          target='_blank'
+        />
+
+        <SocialIcon 
+          url="https://www.linkedin.com/in/leothom/" 
+          fgColor='white' 
+          bgColor='transparent' 
+          target='_blank'
+        />
+
+        <SocialIcon 
+          url="https://www.instagram.com/driveslowleo/" 
+          fgColor='white' 
+          bgColor='transparent' 
+          target='_blank'
+        />
+
+        <SocialIcon 
+          url="https://wa.me/85255314832" 
+          network="whatsapp"
+          fgColor='white' 
+          bgColor='transparent' 
+          target='_blank'
+        />
+
+        <SocialIcon 
+          url="mailto:work@leothom.com" 
+          network="email"
+          fgColor='white' 
+          bgColor='transparent' 
+        />
+
+      </div>
+
       <p className='mt-6 text-xl'>Built with Next.js, TypeScript, Tailwind CSS and Sanity.io</p>
     </div>
   )
