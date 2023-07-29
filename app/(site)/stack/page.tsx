@@ -21,13 +21,13 @@ function FadeInWhenVisible({ children }) {
   );
 }
 
-interface StackItem {  // Defining the type for individual stack items
+interface StackItem { 
   image: string;
   name: string;
 }
 
 export default function StackGrid() {
-  const [stack, setStack] = useState<StackItem[]>([]);  // Applying the type to our state
+  const [stack, setStack] = useState<StackItem[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -44,8 +44,7 @@ export default function StackGrid() {
       <div className='mt-10 grid grid-cols-3 lg:grid-cols-4 gap-4 align-middle'>
       {stack.map((stackItem, index) => (
           stackItem.image && (
-            <FadeInWhenVisible>
-            <div key={index}>
+            <FadeInWhenVisible key={index}>
               <Image
                 src={stackItem.image}
                 alt={stackItem.name}
@@ -53,7 +52,6 @@ export default function StackGrid() {
                 width={75}
                 height={75}
               />
-            </div>
             </FadeInWhenVisible>
           )
       ))}
