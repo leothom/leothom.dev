@@ -10,7 +10,7 @@ export default async function Home() {
 
   return (
     <div className="text-gray-700 dark:text-gray-200">
-      <h1 className='text-4xl sm:text-7xl font-extrabold bg-gradient-to-r from-orange-400 via-red-600 to-purple-500 dark:from-blue-700 dark:via-gray-500 dark:to-white bg-clip-text text-transparent md:py-10 py-5'>Welcome!</h1>
+      <h1 className='text-4xl sm:text-7xl font-extrabold bg-gradient-to-r from-orange-400 via-red-600 to-purple-500 dark:from-blue-700 dark:via-gray-500 dark:to-white bg-clip-text text-transparent'>Welcome!</h1>
       <p className='mt-3 text-xl'>
         I&apos;m Leo and I&apos;m a front-end web developer, with a track record of creating impactful digital experiences for millions of users.
       </p>

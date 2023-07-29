@@ -1,33 +1,44 @@
 "use client"
+import { useEffect, useState } from "react";
 import { getStack } from "@/sanity/sanity-utils";
 import Image from "next/image";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
-export default async function StackGrid() {
-  const stack = await getStack();
+export default function StackGrid() {
+  const [stack, setStack] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await getStack();
+      setStack(data);
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <>
-      <h1 className='text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-orange-400 via-red-600 to-purple-500 dark:from-blue-700 dark:via-gray-500 dark:to-white bg-clip-text text-transparent md:py-10 py-5'>Stack</h1>
+      <h1 className='text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-orange-400 via-red-600 to-purple-500 dark:from-blue-700 dark:via-gray-500 dark:to-white bg-clip-text text-transparent'>Stack</h1>
       <div className='mt-10 grid grid-cols-3 lg:grid-cols-4 gap-4 align-middle'>
-      {stack.map((stackItem) => (
+      {stack.map((stackItem, index) => (
           stackItem.image && (
-              <motion.div
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: .5 }}
-              >
-                <Image
-                  src={stackItem.image}
-                  alt={stackItem.name}
-                  className='object-cover py-5'
-                  width={75}
-                  height={75}
-                />
-              </motion.div>
+            <motion.div
+              key={index} // key prop added here
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: .5 }}
+            >
+              <Image
+                src={stackItem.image}
+                alt={stackItem.name}
+                className='object-cover py-5'
+                width={75}
+                height={75}
+              />
+            </motion.div>
           )
       ))}
       </div>
     </>
-  )
+  );
 }
