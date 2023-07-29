@@ -4,8 +4,13 @@ import { getStack } from "@/sanity/sanity-utils";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+interface StackItem {  // Defining the type for individual stack items
+  image: string;
+  name: string;
+}
+
 export default function StackGrid() {
-  const [stack, setStack] = useState([]);
+  const [stack, setStack] = useState<StackItem[]>([]);  // Applying the type to our state
 
   useEffect(() => {
     const fetchData = async () => {
