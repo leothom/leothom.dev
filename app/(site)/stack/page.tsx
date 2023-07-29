@@ -36,8 +36,8 @@ export default function StackGrid() {
             src={stackItem.image}
                 alt={stackItem.name}
             className="object-cover p-2"
-            width={75}
-            height={75}
+            width={100}
+            height={100}
           />
           )
       ))}
