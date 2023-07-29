@@ -3,8 +3,9 @@ import { useEffect, useState } from "react";
 import { getStack } from "@/sanity/sanity-utils";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { ReactNode } from "react";
 
-function FadeInWhenVisible({ children }) {
+function FadeInWhenVisible({ children }: { children: ReactNode }) {
   return (
     <motion.div
       initial="hidden"
