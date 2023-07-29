@@ -27,6 +27,7 @@ export default function StackGrid() {
       {stack.map((stackItem, index) => (
           stackItem.image && (
             <motion.img
+            key={index}
             initial={{
               opacity: 0,
             }}
