@@ -1,26 +1,7 @@
 "use client"
 import { useEffect, useState } from "react";
 import { getStack } from "@/sanity/sanity-utils";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { ReactNode } from "react";
-
-function FadeInWhenVisible({ children }: { children: ReactNode }) {
-  return (
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
-      transition={{ duration: 0.3 }}
-      variants={{
-        visible: { opacity: 1, scale: 1 },
-        hidden: { opacity: 0, scale: 0 }
-      }}
-    >
-      {children}
-    </motion.div>
-  );
-}
 
 interface StackItem { 
   image: string;
@@ -45,15 +26,19 @@ export default function StackGrid() {
       <div className='mt-10 grid grid-cols-3 lg:grid-cols-4 gap-4 align-middle'>
       {stack.map((stackItem, index) => (
           stackItem.image && (
-            <FadeInWhenVisible key={index}>
-              <Image
-                src={stackItem.image}
+            <motion.img
+            initial={{
+              opacity: 0,
+            }}
+            transition={{duration: 1}}
+            whileInView={{opacity: 1}}
+            viewport={{once: true}}
+            src={stackItem.image}
                 alt={stackItem.name}
-                className='object-cover py-5'
-                width={75}
-                height={75}
-              />
-            </FadeInWhenVisible>
+            className="object-cover p-2"
+            width={75}
+            height={75}
+          />
           )
       ))}
       </div>
