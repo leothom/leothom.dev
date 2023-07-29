@@ -50,8 +50,6 @@ export default async function RootLayout({
         </header>
         <main className='py-10 md:py-20'>{children}</main>
         {/* </Providers> */}
-        <div class="gradient" className='h-screen'></div>
-        <div class="mask-demo"></div>
       </body>
     </html>
   )
