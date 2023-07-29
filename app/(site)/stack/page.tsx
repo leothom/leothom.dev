@@ -4,6 +4,23 @@ import { getStack } from "@/sanity/sanity-utils";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+function FadeInWhenVisible({ children }) {
+  return (
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.3 }}
+      variants={{
+        visible: { opacity: 1, scale: 1 },
+        hidden: { opacity: 0, scale: 0 }
+      }}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
 interface StackItem {  // Defining the type for individual stack items
   image: string;
   name: string;
@@ -27,12 +44,8 @@ export default function StackGrid() {
       <div className='mt-10 grid grid-cols-3 lg:grid-cols-4 gap-4 align-middle'>
       {stack.map((stackItem, index) => (
           stackItem.image && (
-            <motion.div
-              key={index} // key prop added here
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: .5 }}
-            >
+            <FadeInWhenVisible>
+            <div key={index}>
               <Image
                 src={stackItem.image}
                 alt={stackItem.name}
@@ -40,7 +53,8 @@ export default function StackGrid() {
                 width={75}
                 height={75}
               />
-            </motion.div>
+            </div>
+            </FadeInWhenVisible>
           )
       ))}
       </div>
