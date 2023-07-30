@@ -13,7 +13,7 @@ function Hero() {
       <h1 className="text-4xl sm:text-7xl font-extrabold bg-gradient-to-r dark:from-blue-700 dark:via-gray-500 dark:to-white bg-clip-text text-transparent py-2 mb-2">
         howdy, I&apos;m Leo
       </h1>
-      <span className="text-xl text-white">
+      <span className="text-md text-white">
         {/* Style will be inherited from the parent element */}
         <Typewriter
           words={[
