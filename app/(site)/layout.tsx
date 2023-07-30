@@ -2,6 +2,8 @@ import { getPages } from '@/sanity/sanity-utils';
 import '../globals.css';
 import type { Metadata } from 'next'
 import Link from 'next/link';
+import ProjectGrid from '@/components/ProjectGrid';
+import StackGrid from '@/components/StackGrid';
 
 export const metadata: Metadata = {
   title: 'Leo Thom is a front-end developer based in Hong Kong',
@@ -30,12 +32,17 @@ export default async function RootLayout({
 
               <Link href="https://read.cv/leothom" target='_blank' className='font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-orange-400 hover:via-red-600 hover:to-purple-500 bg-clip-text text-transparent'>CV</Link>
 
-              <h3 className='font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-orange-400 hover:via-red-600 hover:to-purple-500 bg-clip-text text-transparent'>
-                <Link href="/#projects" >Projects</Link>
-              </h3>
+              
+              <a href="/#projects" className='font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-orange-400 hover:via-red-600 hover:to-purple-500 bg-clip-text text-transparent'>
+                <p>Projects</p>
+              </a>
+              
               
 
-              <Link href="/#stack" className='font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-orange-400 hover:via-red-600 hover:to-purple-500 bg-clip-text text-transparent'>Stack</Link>
+              <a href="/#stack" className='font-extrabold bg-gradient-to-r from-white via-white to-white 
+              hover:from-orange-400 hover:via-red-600 hover:to-purple-500 bg-clip-text text-transparent'>
+                <p>Stack</p>
+              </a>
 
               <Link href="mailto:work@leothom.com" target='_blank' className='font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-orange-400 hover:via-red-600 hover:to-purple-500 bg-clip-text text-transparent'>Contact</Link>
               

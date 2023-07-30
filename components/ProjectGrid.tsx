@@ -8,7 +8,7 @@ export default async function ProjectGrid() {
 
   return (
     <div className="min-h-screen">
-      <h1 className='text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-orange-400 via-red-600 to-purple-500 dark:from-blue-700 dark:via-gray-500 dark:to-white bg-clip-text text-transparent'>Projects</h1>
+      <h1 className='text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-orange-400 via-red-600 to-purple-500 dark:from-blue-700 dark:via-gray-500 dark:to-white bg-clip-text text-transparent'>🛠️ Projects</h1>
       <div className='mt-10 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8'>
       {projects.map((project) => (
         <Link 
