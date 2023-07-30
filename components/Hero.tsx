@@ -10,27 +10,32 @@ import { Typewriter } from "react-simple-typewriter";
 function Hero() {
   return (
     <div className="text-gray-700 dark:text-gray-200 h-screen">
-      <h1 className="text-4xl sm:text-7xl font-extrabold bg-gradient-to-r dark:from-blue-700 dark:via-gray-500 dark:to-white bg-clip-text text-transparent py-2">
-        Howdy, I&apos;m Leo ✨
+      <h1 className="text-4xl sm:text-7xl font-extrabold bg-gradient-to-r dark:from-blue-700 dark:via-gray-500 dark:to-white bg-clip-text text-transparent py-2 mb-2">
+        howdy, I&apos;m Leo
       </h1>
-      <span className="bg-gradient-to-r dark:from-blue-700 dark:via-gray-500 dark:to-white bg-clip-text text-transparent">
+      <span className="text-xl text-white">
         {/* Style will be inherited from the parent element */}
         <Typewriter
-          words={["Eat", "Sleep", "Code", "Repeat!"]}
+          words={[
+            "🍵 fueled by matcha lattes",
+            "📚 always learning",
+            "📸 loves photography",
+          ]}
           loop={false}
-          cursor
-          cursorStyle="_"
-          typeSpeed={100}
+          cursor={true}
+          cursorStyle="|"
+          cursorBlinking={true}
+          typeSpeed={80}
           deleteSpeed={50}
           delaySpeed={1000}
         />
       </span>
-      <p className="mt-3 text-xl">
-        I&apos;m a front-end web developer and studio photographer based in Hong
-        Kong.
+      <p className="mt-10 text-xl">
+        I&apos;m a web developer currently based in 🇭🇰 Hong Kong, originally
+        from 🇺🇸 Silicon Valley.
       </p>
       <p className="mt-6 text-xl">
-        As a former online marketer and product manager, I transitioned to
+        Former product manager and online marketer, I transitioned to
         programming to get closer to the product and end-user.
       </p>
 
@@ -72,8 +77,12 @@ function Hero() {
         />
       </div>
 
-      <p className="mt-6 text-xl">
-        Built with Next.js, TypeScript, Tailwind CSS and Sanity.io
+      <p className="mt-10 text-xl">
+        💼 Open to remote developer opportunities.
+      </p>
+      <p className="mt-16 text-xl">
+        This website is built with Next.js, TypeScript, Tailwind CSS and
+        Sanity.io
       </p>
     </div>
   );

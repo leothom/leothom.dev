@@ -6,6 +6,9 @@
   html {
     @apply scroll-smooth;
   }
+  p {
+    @apply font-nunito;
+  }
   #social a {
     position: relative;
     top: 0;

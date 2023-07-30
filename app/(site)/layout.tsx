@@ -2,6 +2,20 @@ import { getPages } from "@/sanity/sanity-utils";
 import "../globals.css";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Roboto, Nunito } from "next/font/google";
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-roboto",
+  weight: "400",
+});
+
+const nunito = Nunito({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-nunito",
+});
 
 export const metadata: Metadata = {
   title: "Leo Thom is a front-end developer based in Hong Kong",
@@ -17,8 +31,11 @@ export default async function RootLayout({
   const pages = await getPages();
 
   return (
-    <html lang="en" className="dark bg-gray-800">
-      <body className="max-w-3xl mx-auto p-10">
+    <html
+      lang="en"
+      className={`${roboto.variable} ${nunito.variable} dark bg-gray-800`}
+    >
+      <body className="max-w-3xl mx-auto p-10" id="nav">
         {/* <Providers> */}
         <header className="flex items-left justify-left">
           <div id="right" className="flex">
@@ -30,7 +47,7 @@ export default async function RootLayout({
                 target="_blank"
                 className="font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-orange-400 hover:via-red-600 hover:to-purple-500 bg-clip-text text-transparent"
               >
-                CV
+                <p>CV</p>
               </Link>
 
               <a
@@ -53,7 +70,7 @@ export default async function RootLayout({
                 target="_blank"
                 className="font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-orange-400 hover:via-red-600 hover:to-purple-500 bg-clip-text text-transparent"
               >
-                Contact
+                <p>Contact</p>
               </Link>
             </div>
           </div>
