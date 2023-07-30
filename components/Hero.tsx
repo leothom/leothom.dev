@@ -80,10 +80,6 @@ function Hero() {
       <p className="mt-10 text-xl">
         💼 Open to remote developer opportunities.
       </p>
-      <p className="mt-16 text-xl">
-        This website is built with Next.js, TypeScript, Tailwind CSS and
-        Sanity.io
-      </p>
     </div>
   );
 }
