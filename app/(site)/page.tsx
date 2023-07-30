@@ -6,7 +6,7 @@ import Image from "next/image";
 export default async function Home() {
   return (
     <>
-      <section id="hero" className="snap-start">
+      <section id="hero">
         <Hero />
       </section>
 
