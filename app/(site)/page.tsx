@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import StackGrid from "@/components/StackGrid";
 import ProjectGrid from "@/components/ProjectGrid";
+import Image from "next/image";
 
 export default async function Home() {
   return (
@@ -20,11 +21,12 @@ export default async function Home() {
       <a href="#nav">
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
-            <img
+            <Image
               className="animate-bounce mx-auto h-10 w-10 cursor-pointer"
               src="/arrow.png"
               width={50}
               height={50}
+              alt="arrow"
             />
           </div>
         </footer>
