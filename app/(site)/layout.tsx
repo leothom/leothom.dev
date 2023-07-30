@@ -2,8 +2,6 @@ import { getPages } from '@/sanity/sanity-utils';
 import '../globals.css';
 import type { Metadata } from 'next'
 import Link from 'next/link';
-import ProjectGrid from '@/components/ProjectGrid';
-import StackGrid from '@/components/StackGrid';
 
 export const metadata: Metadata = {
   title: 'Leo Thom is a front-end developer based in Hong Kong',
@@ -20,7 +18,7 @@ export default async function RootLayout({
   const pages = await getPages();
 
   return (
-    <html lang="en" className='dark bg-slate-800'>
+    <html lang="en" className='dark bg-gray-800'>
       <body className="max-w-3xl mx-auto p-10">
         {/* <Providers> */}
         <header className="flex items-left justify-left">
