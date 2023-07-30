@@ -33,7 +33,7 @@ export default async function RootLayout({
   return (
     <html
       lang="en"
-      className={`${roboto.variable} ${nunito.variable} dark bg-gray-800`}
+      className={`${roboto.variable} ${nunito.variable} dark bg-gradient-to-t from-gray-400 to-gray-800`}
     >
       <body className="max-w-3xl mx-auto p-10" id="nav">
         {/* <Providers> */}
