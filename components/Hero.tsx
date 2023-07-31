@@ -21,6 +21,7 @@ function Hero() {
             "🍵 fueled by matcha lattes",
             "📚 always learning",
             "📸 loves photography",
+            "💻 Built with Next.js 13, Tailwind CSS and Sanity.io",
           ]}
           loop={false}
           cursor={true}
