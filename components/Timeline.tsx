@@ -11,13 +11,13 @@ export default async function Timeline() {
       <ol className="relative border-l border-gray-200 dark:border-gray-700">
         {timeline.map((timeline) => (
           <li className="mb-10 ml-6" key={timeline._id}>
-            <span className="absolute flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full -left-5 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-              {timeline.company_image ? (
+            <span className="absolute flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full -left-5 ring-white dark:ring-gray-900 dark:bg-blue-900">
+              {timeline.image ? (
                 <Image
-                  src={timeline.company_image}
+                  src={timeline.image}
                   alt={timeline.company_name}
-                  width={20}
-                  height={20}
+                  width={42}
+                  height={42}
                   className="border rounded-full"
                 />
               ) : (

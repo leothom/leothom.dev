@@ -19,8 +19,8 @@ const timeline = {
       type: 'string',
     },
     {
-      name: 'company_image',
-      title: 'Company Image',
+      name: 'image',
+      title: 'Image',
       type: 'image',
       options: { hotspot: true },
       fields: [

@@ -6,7 +6,7 @@ export type Timeline = {
   job_title: string;
   company_name: string;
   company_location: string;
-  company_image: string;
+  image: string;
   start_date: string;
   end_date: string;
   description: PortableTextBlock[];

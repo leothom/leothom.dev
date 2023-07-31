@@ -83,7 +83,7 @@ export async function getTimeline(): Promise<Timeline[]> {
     job_title,
     company_name,
     company_location,
-    "company_image": image.asset->url,
+    "image": image.asset->url,
     start_date,
     end_date,
     description,
