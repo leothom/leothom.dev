@@ -7,15 +7,15 @@
     @apply scroll-smooth;
   }
   p {
-    @apply font-nunito;
+    @apply font-lato;
   }
-  #social a {
+  #hover a {
     position: relative;
     top: 0;
     transition: top ease 1.5s;
     text-underline-offset: 6px;
   }
-  #social a:hover {
+  #hover a:hover {
     transition: color ease 0.3s;
     top: -3px;
   }

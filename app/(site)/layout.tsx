@@ -2,19 +2,19 @@ import { getPages } from "@/sanity/sanity-utils";
 import "../globals.css";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Roboto, Nunito } from "next/font/google";
+import { Playfair_Display, Lato } from "next/font/google";
 
-const roboto = Roboto({
+const playfair = Playfair_Display({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-roboto",
-  weight: "400",
+  variable: "--font-playfair",
 });
 
-const nunito = Nunito({
+const lato = Lato({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-nunito",
+  variable: "--font-lato",
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ export default async function RootLayout({
   return (
     <html
       lang="en"
-      className={`${roboto.variable} ${nunito.variable} dark bg-gradient-to-t from-gray-500 to-gray-800`}
+      className={`${playfair.variable} ${lato.variable} dark bg-gradient-to-t from-gray-500 to-gray-800`}
     >
       <body className="max-w-3xl mx-auto p-10" id="nav">
         {/* <Providers> */}
@@ -42,25 +42,23 @@ export default async function RootLayout({
             <div className="flex items-center gap-5 text-md">
               <Link href="/">🏠</Link>
 
-              <Link
-                href="https://read.cv/leothom"
-                target="_blank"
-                className="font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-orange-400 hover:via-red-600 hover:to-purple-500 bg-clip-text text-transparent"
-              >
-                <p>CV</p>
-              </Link>
-
               <a
                 href="/#projects"
-                className="font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-orange-400 hover:via-red-600 hover:to-purple-500 bg-clip-text text-transparent"
+                className="font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-blue-700 hover:via-gray-500 hover:to-white bg-clip-text text-transparent"
               >
                 <p>Projects</p>
               </a>
 
               <a
+                href="/#timeline"
+                className="font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-blue-700 hover:via-gray-500 hover:to-white bg-clip-text text-transparent"
+              >
+                <p>Journey</p>
+              </a>
+
+              <a
                 href="/#stack"
-                className="font-extrabold bg-gradient-to-r from-white via-white to-white 
-              hover:from-orange-400 hover:via-red-600 hover:to-purple-500 bg-clip-text text-transparent"
+                className="font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-blue-700 hover:via-gray-500 hover:to-white bg-clip-text text-transparent"
               >
                 <p>Stack</p>
               </a>
@@ -68,9 +66,9 @@ export default async function RootLayout({
               <Link
                 href="mailto:work@leothom.com"
                 target="_blank"
-                className="font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-orange-400 hover:via-red-600 hover:to-purple-500 bg-clip-text text-transparent"
+                className="font-extrabold"
               >
-                <p>Contact</p>
+                <p>💌</p>
               </Link>
             </div>
           </div>

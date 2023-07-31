@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import StackGrid from "@/components/StackGrid";
 import ProjectGrid from "@/components/ProjectGrid";
+import Timeline from "@/components/Timeline";
 import Image from "next/image";
 
 export default async function Home() {
@@ -12,6 +13,10 @@ export default async function Home() {
 
       <section id="projects" className="py-5">
         <ProjectGrid />
+      </section>
+
+      <section id="timeline" className="py-5">
+        <Timeline />
       </section>
 
       <section id="stack" className="py-5">

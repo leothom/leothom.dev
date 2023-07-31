@@ -1,6 +1,7 @@
 import { Project } from "@/types/Project";
 import { Page } from "@/types/Page";
 import { Stack } from "@/types/Stack";
+import { Timeline } from "@/types/Timeline";
 import { createClient, groq } from "next-sanity";
 import clientConfig from "./config/client-config";
 
@@ -69,6 +70,26 @@ export async function getStack(): Promise<Stack[]> {
     _createdAt,
     name,
     "image": image.asset->url
+    }`
+  )
+}
+
+export async function getTimeline(): Promise<Timeline[]> {
+
+  return createClient(clientConfig).fetch(
+    groq`*[_type == "timeline"] | order(order asc) {
+    _id,
+    _createdAt,
+    job_title,
+    company_name,
+    company_location,
+    "company_image": image.asset->url,
+    start_date,
+    end_date,
+    description,
+    button_text,
+    button_url,
+    order
     }`
   )
 }

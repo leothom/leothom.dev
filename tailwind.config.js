@@ -12,8 +12,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-roboto)'],
-        nunito: ['var(--font-nunito)'],
+        playfair: ['var(--font-playfair)'],
+        lato: ['var(--font-lato)'],
       },
     },
   },

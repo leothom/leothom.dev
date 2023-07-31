@@ -1,0 +1,73 @@
+import { getTimeline } from "@/sanity/sanity-utils";
+import { PortableText } from "@portabletext/react";
+import Link from "next/link";
+import Image from "next/image";
+
+export default async function Timeline() {
+  const timeline = await getTimeline();
+
+  return (
+    <div className="min-h-screen pt-10" id="timeline">
+      <ol className="relative border-l border-gray-200 dark:border-gray-700">
+        {timeline.map((timeline) => (
+          <li className="mb-10 ml-6" key={timeline._id}>
+            <span className="absolute flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full -left-5 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+              {timeline.company_image ? (
+                <Image
+                  src={timeline.company_image}
+                  alt={timeline.company_name}
+                  width={20}
+                  height={20}
+                  className="border rounded-full"
+                />
+              ) : (
+                <svg
+                  className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                </svg>
+              )}
+            </span>
+
+            <div className="ml-6">
+              <h3 className="flex items-center mb-1 text-lg font-semibold dark:text-white">
+                {timeline.job_title}
+              </h3>
+              <h3 className="block mb-2 text-md font-normal leading-none dark:text-gray-300">
+                {timeline.company_name}
+              </h3>
+              <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-300">
+                {timeline.start_date} - {timeline.end_date} |{" "}
+                {timeline.company_location}
+              </time>
+              <p className="mb-4 prose-invert dark:text-gray-400 prose-p:mb-5">
+                <PortableText value={timeline.description} />
+              </p>
+
+              {timeline.button_url && (
+                <a
+                  href={timeline.button_url}
+                  target="_blank"
+                  className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-700 dark:text-white dark:border-gray-600 dark:hover:text-gray-400 dark:hover:bg-gray-200"
+                >
+                  <Image
+                    src="/iconmonstr-link-1-64.png"
+                    alt="link"
+                    width={16}
+                    height={16}
+                    className="mr-2"
+                  />
+                  {timeline.button_text}
+                </a>
+              )}
+            </div>
+          </li>
+        ))}
+      </ol>
+    </div>
+  );
+}

@@ -6,6 +6,7 @@ config.autoAddCss = false;
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { Typewriter } from "react-simple-typewriter";
+import Link from "next/link";
 
 function Hero() {
   return (
@@ -39,7 +40,7 @@ function Hero() {
         programming to get closer to the product and end-user.
       </p>
 
-      <div className="mt-6" id="social">
+      <div className="mt-6" id="hover">
         <SocialIcon
           url="https://github.com/leothom"
           fgColor="white"
@@ -77,9 +78,14 @@ function Hero() {
         />
       </div>
 
-      <p className="mt-10 text-xl">
-        💼 Open to remote developer opportunities.
-      </p>
+      <p className="mt-10 text-xl">💼 Available for immediate hire</p>
+      <div id="hover">
+        <a href="https://read.cv/leothom" target="_blank">
+          <p className="mt-8 text-md underline underline-offset-8">
+            👀 Read my CV
+          </p>
+        </a>
+      </div>
     </div>
   );
 }
