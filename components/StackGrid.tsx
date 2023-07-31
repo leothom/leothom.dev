@@ -30,9 +30,13 @@ export default function StackGrid() {
                 key={index}
                 initial={{
                   opacity: 0,
+                  y: -200,
                 }}
-                transition={{ duration: 1 }}
-                whileInView={{ opacity: 1 }}
+                transition={{ duration: 2 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                }}
                 viewport={{ once: true }}
                 src={stackItem.image}
                 alt={stackItem.name}
