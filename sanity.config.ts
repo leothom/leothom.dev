@@ -11,7 +11,7 @@ const config = defineConfig({
   plugins: [
     deskTool(),
     visionTool({
-      defaultApiVersion: 'v2021-10-21',
+      defaultApiVersion: '2023-07-24',
       defaultDataset: 'production',
     }),
   ],
