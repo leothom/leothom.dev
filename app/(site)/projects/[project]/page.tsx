@@ -5,8 +5,6 @@ import Link from "next/link";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCodeBranch } from "@fortawesome/free-solid-svg-icons";
 
 type Props = {
   params: { project: string };
@@ -20,10 +18,10 @@ export default async function Project({ params }: Props) {
   return (
     <div className="text-gray-700 dark:text-gray-200">
       <header className="flex justify-between items-center">
-        <h1 className="text-2xl sm:text-5xl font-extrabold bg-gradient-to-r dark:from-blue-700 dark:via-gray-500 dark:to-white bg-clip-text text-transparent md:py-10 py-5 mr-10">
+        <h1 className="text-3xl sm:text-5xl font-extrabold bg-gradient-to-r dark:from-blue-700 dark:via-gray-500 dark:to-white bg-clip-text text-transparent md:py-10 py-5 mr-10">
           {project.name}
         </h1>
-        <h2 className="mt-2 text-xs sm:text-lg">{project.subtitle}</h2>
+        <h2 className="text-xs sm:text-lg">{project.subtitle}</h2>
       </header>
 
       {/* Image goes here */}
@@ -33,9 +31,19 @@ export default async function Project({ params }: Props) {
           alt={project.name}
           width={960}
           height={540}
-          className="mt-10 border-2 border-gray-700 object-cover rounded-xl"
+          className="border-2 border-gray-700 object-cover rounded-xl"
         />
       </a>
+      <div className="mt-2">
+        {project.stack.map((tech) => (
+          <button
+            type="button"
+            className="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg md:text-sm text-xs px-2.5 py-1 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+          >
+            {tech}
+          </button>
+        ))}
+      </div>
 
       <div className="mt-10 flex">
         {project.githuburl && (

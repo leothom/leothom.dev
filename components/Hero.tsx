@@ -11,7 +11,7 @@ import Link from "next/link";
 function Hero() {
   return (
     <div className="text-gray-700 dark:text-gray-200 h-screen">
-      <h1 className="text-4xl sm:text-7xl font-extrabold bg-gradient-to-r dark:from-blue-700 dark:via-gray-500 dark:to-white bg-clip-text text-transparent py-2 mb-2">
+      <h1 className="text-4xl sm:text-7xl font-extrabold bg-gradient-to-r dark:from-blue-700 dark:via-gray-500 dark:to-white bg-clip-text text-transparent pt-2 mb-2">
         Hi, I&apos;m Leo
       </h1>
       <span className="text-md text-white">
@@ -21,7 +21,6 @@ function Hero() {
             "🍵 fueled by matcha lattes",
             "📚 always learning",
             "📸 loves photography",
-            "💻 Built with Next.js 13, Tailwind CSS and Sanity.io",
           ]}
           loop={false}
           cursor={true}
@@ -33,8 +32,8 @@ function Hero() {
         />
       </span>
       <p className="mt-10 text-xl">
-        I&apos;m a web developer currently based in 🇭🇰 Hong Kong, originally
-        from 🇺🇸 Silicon Valley.
+        I&apos;m a web developer currently based in Hong Kong, originally from
+        Silicon Valley.
       </p>
       <p className="mt-6 text-xl">
         Former product manager and online marketer, I transitioned to
@@ -86,9 +85,8 @@ function Hero() {
           className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br dark:from-blue-700 dark:via-gray-500 dark:to-white group-hover:from-blue-700 group-hover:via-gray-500 group-hover:to-white hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-blue-800"
         >
           <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-          💼 Read my CV
+            💼 Read my CV
           </span>
-          
         </a>
       </div>
     </div>
