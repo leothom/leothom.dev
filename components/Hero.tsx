@@ -83,9 +83,12 @@ function Hero() {
         <a
           href="https://read.cv/leothom"
           target="_blank"
-          className="text-md px-4 py-2 mx-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-700 dark:text-white dark:border-gray-600 dark:hover:text-gray-400 dark:hover:bg-gray-200"
+          className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br dark:from-blue-700 dark:via-gray-500 dark:to-white group-hover:from-blue-700 group-hover:via-gray-500 group-hover:to-white hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-blue-800"
         >
+          <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
           💼 Read my CV
+          </span>
+          
         </a>
       </div>
     </div>
