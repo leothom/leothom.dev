@@ -14,6 +14,12 @@ const project = {
       type: 'string',
     },
     {
+      title: 'Stack',
+      name: 'stack',
+      type: 'array',
+      of: [{type: 'string'}]
+    },
+    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
