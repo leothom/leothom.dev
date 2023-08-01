@@ -5,7 +5,7 @@ export type Project = {
   _createdAt: string;
   name: string;
   subtitle: string;
-  stack: string;
+  stack: string[];
   slug: string;
   image: string;
   url: string;
