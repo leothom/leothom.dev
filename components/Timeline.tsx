@@ -48,25 +48,21 @@ export default async function Timeline() {
                 <PortableText value={timeline.description} />
               </p>
 
-
-              
-
               {timeline.button_url && (
-                <a 
-                href={timeline.button_url}
-                target="_blank"
-                className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br dark:from-blue-700 dark:via-gray-500 dark:to-white group-hover:from-blue-700 group-hover:via-gray-500 group-hover:to-white hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-blue-800">
-                <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                <a
+                  href={timeline.button_url}
+                  target="_blank"
+                  className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-400 focus:outline-none dark:bg-gray-500 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:text-gray-350 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                >
                   <Image
-                    src="/iconmonstr-link-1-64.png"
+                    src="/icon-link-white.png"
                     alt="link"
                     width={16}
                     height={16}
-                    className="mr-2 inline"
+                    className="mr-2 inline "
                   />
                   {timeline.button_text}
-                </span>
-              </a>
+                </a>
               )}
             </div>
           </li>
