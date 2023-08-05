@@ -1,4 +1,3 @@
-import { getPages } from "@/sanity/sanity-utils";
 import "../globals.css";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -27,9 +26,6 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // get all pages
-  const pages = await getPages();
-
   return (
     <html
       lang="en"
@@ -53,7 +49,7 @@ export default async function RootLayout({
                 href="/#timeline"
                 className="font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-blue-700 hover:via-gray-500 hover:to-white bg-clip-text text-transparent"
               >
-                <p>Journey</p>
+                <p>Experience</p>
               </a>
 
               <a
@@ -74,7 +70,6 @@ export default async function RootLayout({
           </div>
         </header>
         <main className="py-10 md:py-20">{children}</main>
-        {/* </Providers> */}
       </body>
     </html>
   );

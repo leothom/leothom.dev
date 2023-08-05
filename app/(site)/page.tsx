@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
-import StackGrid from "@/components/StackGrid";
 import ProjectGrid from "@/components/ProjectGrid";
 import Timeline from "@/components/Timeline";
+import StackGrid from "@/components/StackGrid";
 import Image from "next/image";
 
 export default async function Home() {

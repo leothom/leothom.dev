@@ -1,13 +1,15 @@
 import { getTimeline } from "@/sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
-import Link from "next/link";
 import Image from "next/image";
 
 export default async function Timeline() {
   const timeline = await getTimeline();
 
   return (
-    <div className="min-h-screen pt-10" id="timeline">
+    <div className="min-h-screen mt-10" id="timeline">
+      <h1 className="text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-orange-400 via-red-600 to-purple-500 dark:from-white dark:to-white bg-clip-text text-transparent mb-16">
+        Experience
+      </h1>
       <ol className="relative border-l border-gray-200 dark:border-gray-700">
         {timeline.map((timeline) => (
           <li className="mb-10 ml-6" key={timeline._id}>

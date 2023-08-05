@@ -1,12 +1,10 @@
 "use client";
-
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { Typewriter } from "react-simple-typewriter";
-import Link from "next/link";
 
 function Hero() {
   return (
