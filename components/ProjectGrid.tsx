@@ -10,7 +10,7 @@ export default async function ProjectGrid() {
       <h1 className="text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-orange-400 via-red-600 to-purple-500 dark:from-white dark:to-white bg-clip-text text-transparent py-6">
         Selected Projects
       </h1>
-      <div className="mt-10 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
           <Link
             href={`/projects/${project.slug}`}
@@ -27,7 +27,20 @@ export default async function ProjectGrid() {
               />
             )}
             <div className="font-extrabold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 dark:from-white dark:to-white bg-clip-text text-transparent mt-2 p-2">
-              {project.name}
+              <p className="px-1 text-md">
+                {project.name} - {project.subtitle}
+              </p>
+              <div className="mt-2">
+                {project.stack.map((tech, index) => (
+                  <button
+                    key={index}
+                    type="button"
+                    className="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-xs px-3 py-1 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+                  >
+                    {tech}
+                  </button>
+                ))}
+              </div>
             </div>
           </Link>
         ))}
