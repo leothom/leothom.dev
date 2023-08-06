@@ -10,7 +10,7 @@ function Hero() {
   return (
     <div className="text-gray-700 dark:text-gray-200 h-screen">
       <h1 className="text-4xl sm:text-7xl font-extrabold bg-gradient-to-r dark:from-blue-700 dark:via-gray-500 dark:to-white bg-clip-text text-transparent pt-2 mb-2">
-        Hi, I&apos;m Leo
+        Hi, I&apos;m Leo Thom
       </h1>
       <span className="text-md text-white">
         {/* Style will be inherited from the parent element */}
@@ -30,8 +30,8 @@ function Hero() {
         />
       </span>
       <p className="mt-10 text-xl">
-        I&apos;m a web developer currently based in Hong Kong, originally from
-        Silicon Valley.
+        I&apos;m a front-end web developer currently based in Hong Kong,
+        originally from Silicon Valley.
       </p>
       <p className="mt-6 text-xl">
         Former product manager and online marketer, I transitioned to
