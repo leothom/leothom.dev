@@ -36,8 +36,6 @@ export default async function RootLayout({
         <header className="flex items-left justify-left">
           <div id="right" className="flex">
             <div className="flex items-center gap-5 text-md">
-              <Link href="/">🏠</Link>
-
               <a
                 href="/#projects"
                 className="font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-blue-700 hover:via-gray-500 hover:to-white bg-clip-text text-transparent"
@@ -58,14 +56,6 @@ export default async function RootLayout({
               >
                 <p>Stack</p>
               </a>
-
-              <Link
-                href="mailto:work@leothom.com"
-                target="_blank"
-                className="font-extrabold"
-              >
-                <p>💌</p>
-              </Link>
             </div>
           </div>
         </header>
