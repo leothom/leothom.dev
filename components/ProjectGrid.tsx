@@ -8,7 +8,7 @@ export default async function ProjectGrid() {
   return (
     <div className="min-h-screen">
       <h1 className="text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-orange-400 via-red-600 to-purple-500 dark:from-white dark:to-white bg-clip-text text-transparent py-6 mb-10">
-        Selected Projects
+        Select Projects
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
