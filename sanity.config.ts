@@ -16,7 +16,7 @@ const config = defineConfig({
     }),
   ],
   apiVersion: '2023-07-24',
-  useCdn: true,
+  useCdn: false,
   schema: { types: schemas },
 });
 
