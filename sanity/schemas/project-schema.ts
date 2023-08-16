@@ -39,6 +39,32 @@ const project = {
       ],
     },
     {
+      name: 'image1',
+      title: 'Image #1',
+      type: 'image',
+      options: { hotspot: true },
+      fields: [
+        {
+          name: 'alt',
+          title: 'Alternative text',
+          type: 'string',
+        },
+      ],
+    },
+    {
+      name: 'image2',
+      title: 'Image #2',
+      type: 'image',
+      options: { hotspot: true },
+      fields: [
+        {
+          name: 'alt',
+          title: 'Alternative text',
+          type: 'string',
+        },
+      ],
+    },
+    {
       name: 'url',
       title: 'Url',
       type: 'url',

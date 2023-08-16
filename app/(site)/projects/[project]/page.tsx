@@ -88,6 +88,28 @@ export default async function Project({ params }: Props) {
       <div className="text-lg text-gray-700 dark:text-gray-200 mt-5 prose dark:prose-invert lg:prose-xl">
         <PortableText value={project.content} />
       </div>
+
+      {/* Support images go here */}
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {project.image1 && (
+          <Image
+            src={project.image1}
+            alt={project.name}
+            width={960}
+            height={540}
+            className="border-2 border-gray-700 object-cover rounded-xl"
+          />
+        )}
+        {project.image2 && (
+          <Image
+            src={project.image2}
+            alt={project.name}
+            width={960}
+            height={540}
+            className="border-2 border-gray-700 object-cover rounded-xl"
+          />
+        )}
+      </div>
     </div>
   );
 }
