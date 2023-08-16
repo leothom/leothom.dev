@@ -23,7 +23,7 @@ export default async function Project({ params }: Props) {
       {/* Image goes here */}
       <a href={project.url} target="_blank">
         <Image
-          src={project.image}
+          src={project.imagehero}
           alt={project.name}
           width={960}
           height={540}

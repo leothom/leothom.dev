@@ -13,7 +13,7 @@ export async function getProjects(): Promise<Project[]> {
     _createdAt,
     name,
     "slug": slug.current,
-    "image": image.asset->url,
+    "imagehero": image.asset->url,
     url,
     content,
     subtitle,
@@ -32,7 +32,7 @@ export async function getProject(slug: string): Promise<Project> {
     subtitle,
     stack,
     "slug": slug.current,
-    "image": image.asset->url,
+    "imagehero": image.asset->url,
     url,
     githuburl,
     content
