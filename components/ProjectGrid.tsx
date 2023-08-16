@@ -7,10 +7,10 @@ export default async function ProjectGrid() {
 
   return (
     <div className="min-h-screen">
-      <h1 className="text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-orange-400 via-red-600 to-purple-500 dark:from-white dark:to-white bg-clip-text text-transparent py-6 mb-10">
+      <h1 className="text-4xl sm:text-5xl font-extrabold text-white py-6 mb-10">
         Select Projects
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 drop-shadow-md hover:drop-shadow-xl">
         {projects.map((project) => (
           <Link
             href={`/projects/${project.slug}`}
@@ -21,12 +21,12 @@ export default async function ProjectGrid() {
               <Image
                 src={project.image}
                 alt={project.name}
-                className="object-cover rounded-lg border border-gray-500 dark:border-gray-400"
+                className="object-cover rounded-md border border-gray-500 dark:border-gray-400"
                 width={750}
                 height={300}
               />
             )}
-            <div className="font-extrabold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 dark:from-white dark:to-white bg-clip-text text-transparent mt-2 p-2">
+            <div className="font-extrabold text-white mt-2 p-2">
               <p className="px-1 text-md">
                 {project.name} - {project.subtitle}
               </p>
