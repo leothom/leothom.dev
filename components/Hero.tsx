@@ -16,7 +16,7 @@ function Hero() {
       <span className="text-lg text-white">
         <Typewriter
           words={[
-            "🍵 fueled by matcha lattes",
+            "🍵 fueled by matcha",
             "📚 always learning",
             "📸 loves photography",
           ]}
