@@ -45,7 +45,10 @@ export default function StackGrid() {
                 />
                 <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white w-24 h-24">
                   <div className="flex items-center justify-center h-full">
-                    <p className="text-md font-bold text-black opacity-100 z-20">
+                    <p
+                      className="text-md font-bold text-black opacity-100 z-20"
+                      role="tooltip"
+                    >
                       {stackItem.name}
                     </p>
                   </div>
