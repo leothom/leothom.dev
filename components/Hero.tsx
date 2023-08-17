@@ -37,7 +37,9 @@ function Hero() {
         Former product manager and online marketer, I transitioned to
         programming to get closer to the product and user experience.
       </p>
-      <p className="mt-6 text-xl animate-pulse">💼 Open for immediate hire.</p>
+      <p className="mt-6 text-xl animate-pulse">
+        💼 Available for immediate hire.
+      </p>
 
       <div className="mt-6" id="hover">
         <SocialIcon

@@ -26,8 +26,8 @@ const project = {
       options: { source: 'name' },
     },
     {
-      name: 'image',
-      title: 'Image',
+      name: 'imagemain',
+      title: 'Image - Main',
       type: 'image',
       options: { hotspot: true },
       fields: [

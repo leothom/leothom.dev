@@ -7,7 +7,7 @@ export type Project = {
   subtitle: string;
   stack: string[];
   slug: string;
-  image: string;
+  imagemain: string;
   url: string;
   githuburl: string;
   content: PortableTextBlock[];
