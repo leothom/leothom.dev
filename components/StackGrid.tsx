@@ -29,12 +29,14 @@ export default function StackGrid() {
               <div className="group relative flex cursor-pointer" key={index}>
                 <motion.img
                   key={index}
-                  initial={{
-                    y: -200,
-                  }}
-                  transition={{ duration: 1.5 }}
-                  whileInView={{
-                    y: 0,
+                  initial={{ rotate: 180, scale: 0, opacity: 0 }}
+                  whileInView={{ rotate: 360, opacity: 1 }}
+                  animate={{ scale: 1 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 260,
+                    damping: 20,
+                    delay: 0.5,
                   }}
                   viewport={{ once: true }}
                   src={stackItem.image}
