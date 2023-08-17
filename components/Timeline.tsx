@@ -54,7 +54,19 @@ export default async function Timeline() {
                 <a
                   href={timeline.button_url}
                   target="_blank"
-                  className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-400 focus:outline-none dark:bg-gray-500 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:text-gray-350 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                  className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium 
+                  text-white 
+                  focus:outline-none 
+                  dark:bg-gray-600 
+                  rounded-lg 
+                  border 
+                  focus:z-10 focus:ring-4 
+                  focus:ring-gray-200 
+                  dark:focus:ring-gray-700 
+                  dark:text-white 
+                  dark:border-gray-600 
+                  dark:hover:text-gray-400 
+                  dark:hover:bg-gray-700"
                 >
                   <Image
                     src="/icon-link-white.png"

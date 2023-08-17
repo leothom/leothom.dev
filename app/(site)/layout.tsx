@@ -29,7 +29,7 @@ export default async function RootLayout({
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${lato.variable} dark bg-gradient-to-t from-gray-500 to-gray-800`}
+      className={`${playfair.variable} ${lato.variable} dark bg-gradient-to-t from-gray-700 to-gray-900`}
     >
       <body className="max-w-3xl mx-auto p-10" id="nav">
         {/* <Providers> */}
