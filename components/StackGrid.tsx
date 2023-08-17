@@ -26,24 +26,31 @@ export default function StackGrid() {
         {stack.map(
           (stackItem, index) =>
             stackItem.image && (
-              <motion.img
-                key={index}
-                initial={{
-                  opacity: 0,
-                  y: -200,
-                }}
-                transition={{ duration: 2 }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                viewport={{ once: true }}
-                src={stackItem.image}
-                alt={stackItem.name}
-                className="object-cover p-2"
-                width={100}
-                height={100}
-              />
+              <div className="group relative flex cursor-pointer">
+                <motion.img
+                  key={index}
+                  initial={{
+                    opacity: 0,
+                    y: -200,
+                  }}
+                  transition={{ duration: 1 }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  viewport={{ once: true }}
+                  src={stackItem.image}
+                  alt={stackItem.name}
+                  className="p-2 filter group-hover:grayscale transition duration-25 ease-in-out z-0 w-24 h-24"
+                />
+                <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white w-24 h-24">
+                  <div className="flex items-center justify-center h-full">
+                    <p className="text-md font-bold text-black opacity-100 z-20">
+                      {stackItem.name}
+                    </p>
+                  </div>
+                </div>
+              </div>
             )
         )}
       </div>
