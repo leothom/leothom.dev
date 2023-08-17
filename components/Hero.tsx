@@ -35,10 +35,10 @@ function Hero() {
       </p>
       <p className="mt-6 text-xl">
         Former product manager and online marketer, I transitioned to
-        programming to get closer to the product and user experience.
+        programming to get closer to the user experience.
       </p>
       <p className="mt-6 text-xl animate-pulse">
-        💼 Available for immediate hire.
+        Available for immediate hire.
       </p>
 
       <div className="mt-6" id="hover">
