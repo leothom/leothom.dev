@@ -26,34 +26,8 @@ const project = {
       options: { source: 'name' },
     },
     {
-      name: 'imagehero',
-      title: 'ImageHero',
-      type: 'image',
-      options: { hotspot: true },
-      fields: [
-        {
-          name: 'alt',
-          title: 'Alternative text',
-          type: 'string',
-        },
-      ],
-    },
-    {
-      name: 'image1',
-      title: 'Image #1',
-      type: 'image',
-      options: { hotspot: true },
-      fields: [
-        {
-          name: 'alt',
-          title: 'Alternative text',
-          type: 'string',
-        },
-      ],
-    },
-    {
-      name: 'image2',
-      title: 'Image #2',
+      name: 'image',
+      title: 'Image',
       type: 'image',
       options: { hotspot: true },
       fields: [

@@ -17,9 +17,9 @@ export default async function ProjectGrid() {
             key={project._id}
             className="border-2 border-gray-500 dark:border-gray-400 rounded-lg pd-1 hover:scale-105 hover:border-blue-500 transition"
           >
-            {project.imagehero && (
+            {project.image && (
               <Image
-                src={project.imagehero}
+                src={project.image}
                 alt={project.name}
                 className="object-cover rounded-lg border border-gray-500 dark:border-gray-400"
                 width={750}
