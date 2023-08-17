@@ -26,7 +26,7 @@ export default function StackGrid() {
         {stack.map(
           (stackItem, index) =>
             stackItem.image && (
-              <div className="group relative flex cursor-pointer">
+              <div className="group relative flex cursor-pointer" key={index}>
                 <motion.img
                   key={index}
                   initial={{
