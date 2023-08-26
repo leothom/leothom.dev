@@ -29,21 +29,21 @@ export default async function RootLayout({
             <div className="flex items-center gap-5 text-md">
               <a
                 href="/#projects"
-                className="font-bold text-white hover:text-gray-500 hover:bg-white border border-sky-100 rounded-xl px-2 py-1 transition duration-500 ease-in-out"
+                className="font-medium text-white hover:text-gray-500 hover:bg-white border border-sky-100 rounded-lg px-2 py-1 transition duration-500 ease-in-out"
               >
                 <p>Projects</p>
               </a>
 
               <a
                 href="/#timeline"
-                className="font-bold text-white hover:text-gray-500 hover:bg-white border border-sky-100 rounded-xl px-2 py-1 transition duration-500 ease-in-out"
+                className="font-medium text-white hover:text-gray-500 hover:bg-white border border-sky-100 rounded-lg px-2 py-1 transition duration-500 ease-in-out"
               >
                 <p>Experience</p>
               </a>
 
               <a
                 href="/#stack"
-                className="font-bold text-white hover:text-gray-500 hover:bg-white border border-sky-100 rounded-xl px-2 py-1 transition duration-500 ease-in-out"
+                className="font-medium text-white hover:text-gray-500 hover:bg-white border border-sky-100 rounded-lg px-2 py-1 transition duration-500 ease-in-out"
               >
                 <p>Stack</p>
               </a>
