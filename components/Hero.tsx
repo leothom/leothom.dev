@@ -31,12 +31,9 @@ function Hero() {
       </span>
       <p className="mt-10 text-xl">
         I&apos;m a front-end web developer currently based in Hong Kong,
-        originally from Silicon Valley. Previously at LinkedIn Corp.
+        originally from Silicon Valley.
       </p>
-      <p className="mt-6 text-xl">
-        Former product manager and online marketer, I transitioned to
-        programming to get closer to the user experience.
-      </p>
+      <p className="mt-6 text-xl">Previously at LinkedIn Corp.</p>
       <div className="mt-6" id="hover">
         <SocialIcon
           url="https://github.com/leothom"
