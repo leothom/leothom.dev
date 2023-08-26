@@ -15,7 +15,7 @@ export default async function ProjectGrid() {
           <Link
             href={`/projects/${project.slug}`}
             key={project._id}
-            className="border-2 border-gray-500 dark:border-gray-400 rounded-lg pd-1 hover:scale-105 hover:border-blue-500 transition"
+            className="border-2 border-gray-500 dark:border-gray-400 rounded-lg pd-1 hover:scale-105 dark:hover:border-blue-500 transition"
           >
             {project.imagemain && (
               <Image

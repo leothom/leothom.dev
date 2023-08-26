@@ -31,7 +31,7 @@ function Hero() {
       </span>
       <p className="mt-10 text-xl">
         I&apos;m a front-end web developer currently based in Hong Kong,
-        originally from Silicon Valley.
+        originally from Silicon Valley. Previously at LinkedIn Corp.
       </p>
       <p className="mt-6 text-xl">
         Former product manager and online marketer, I transitioned to
