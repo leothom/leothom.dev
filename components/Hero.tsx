@@ -29,11 +29,10 @@ function Hero() {
           delaySpeed={1000}
         />
       </span>
-      <p className="mt-10 text-xl">
-        I&apos;m a front-end web developer currently based in Hong Kong,
-        originally from Silicon Valley.
+      <p className="mt-10 text-md sm:text-xl">
+        I&apos;m a front-end web developer currently based in Hong Kong.
       </p>
-      <p className="mt-6 text-xl">Previously at LinkedIn Corp.</p>
+      <p className="mt-6 text-md sm:text-xl">Previously at LinkedIn Corp.</p>
       <div className="mt-6" id="hover">
         <SocialIcon
           url="https://github.com/leothom"
@@ -75,7 +74,7 @@ function Hero() {
         />
       </div>
 
-      <p className="mt-6 text-xl animate-pulse">
+      <p className="mt-6 text-md sm:text-xl animate-pulse underline underline-offset-4">
         Available for immediate hire.
       </p>
 
