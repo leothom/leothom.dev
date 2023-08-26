@@ -29,30 +29,30 @@ export default async function RootLayout({
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${lato.variable} dark bg-gradient-to-t from-gray-700 to-gray-900`}
+      className={`${playfair.variable} ${lato.variable} dark bg-black`}
     >
       <body className="max-w-3xl mx-auto p-10" id="nav">
         {/* <Providers> */}
-        <header className="flex items-left justify-left">
+        <header className="flex items-left justify-left top-0">
           <div id="right" className="flex">
             <div className="flex items-center gap-5 text-md">
               <a
                 href="/#projects"
-                className="font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-blue-700 hover:via-gray-500 hover:to-white bg-clip-text text-transparent"
+                className="font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-gray-700 hover:via-gray-500 hover:to-white bg-clip-text text-transparent"
               >
                 <p>Projects</p>
               </a>
 
               <a
                 href="/#timeline"
-                className="font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-blue-700 hover:via-gray-500 hover:to-white bg-clip-text text-transparent"
+                className="font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-gray-700 hover:via-gray-500 hover:to-white bg-clip-text text-transparent"
               >
                 <p>Experience</p>
               </a>
 
               <a
                 href="/#stack"
-                className="font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-blue-700 hover:via-gray-500 hover:to-white bg-clip-text text-transparent"
+                className="font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-gray-700 hover:via-gray-500 hover:to-white bg-clip-text text-transparent"
               >
                 <p>Stack</p>
               </a>
