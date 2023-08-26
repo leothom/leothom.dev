@@ -7,9 +7,9 @@ export default async function ProjectGrid() {
 
   return (
     <div className="min-h-screen">
-      {/* <h1 className="text-4xl sm:text-5xl font-extrabold text-white py-6 mb-10">
+      <h1 className="text-4xl sm:text-5xl font-extrabold text-white py-6 mb-10">
         Select Projects
-      </h1> */}
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 drop-shadow-md hover:drop-shadow-xl">
         {projects.map((project) => (
           <Link
