@@ -1,13 +1,7 @@
 import "../globals.css";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Playfair_Display, Lato } from "next/font/google";
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-playfair",
-});
+import { Merriweather, Lato } from "next/font/google";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -27,10 +21,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${playfair.variable} ${lato.variable} dark bg-black`}
-    >
+    <html lang="en" className={`${lato.variable} dark bg-black`}>
       <body className="max-w-3xl mx-auto p-10" id="nav">
         {/* <Providers> */}
         <header className="flex items-left justify-left top-0">
@@ -38,21 +29,21 @@ export default async function RootLayout({
             <div className="flex items-center gap-5 text-md">
               <a
                 href="/#projects"
-                className="font-bold text-white hover:text-gray-500"
+                className="font-bold text-white hover:text-gray-500 hover:bg-white border border-sky-100 rounded-xl px-2 py-1 transition duration-500 ease-in-out"
               >
                 <p>Projects</p>
               </a>
 
               <a
                 href="/#timeline"
-                className="font-bold text-white hover:text-gray-500"
+                className="font-bold text-white hover:text-gray-500 hover:bg-white border border-sky-100 rounded-xl px-2 py-1 transition duration-500 ease-in-out"
               >
                 <p>Experience</p>
               </a>
 
               <a
                 href="/#stack"
-                className="font-bold text-white hover:text-gray-500"
+                className="font-bold text-white hover:text-gray-500 hover:bg-white border border-sky-100 rounded-xl px-2 py-1 transition duration-500 ease-in-out"
               >
                 <p>Stack</p>
               </a>
