@@ -10,7 +10,7 @@ import Image from "next/image";
 function Hero() {
   return (
     <div className="text-gray-700 dark:text-gray-200 h-screen">
-      <h1 className="text-4xl sm:text-7xl font-extrabold bg-gradient-to-r dark:from-blue-700 dark:via-gray-500 dark:to-white bg-clip-text text-transparent pt-2 mb-2">
+      <h1 className="text-4xl sm:text-7xl font-extrabold bg-gradient-to-r dark:from-white dark:via-blue-500 dark:to-white bg-clip-text text-transparent pt-2 mb-2">
         Hi, I&apos;m Leo Thom
       </h1>
       <span className="text-lg text-white">
