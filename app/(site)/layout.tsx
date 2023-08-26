@@ -38,21 +38,21 @@ export default async function RootLayout({
             <div className="flex items-center gap-5 text-md">
               <a
                 href="/#projects"
-                className="font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-gray-700 hover:via-gray-500 hover:to-white bg-clip-text text-transparent"
+                className="font-bold text-white hover:text-gray-500"
               >
                 <p>Projects</p>
               </a>
 
               <a
                 href="/#timeline"
-                className="font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-gray-700 hover:via-gray-500 hover:to-white bg-clip-text text-transparent"
+                className="font-bold text-white hover:text-gray-500"
               >
                 <p>Experience</p>
               </a>
 
               <a
                 href="/#stack"
-                className="font-extrabold bg-gradient-to-r from-white via-white to-white hover:from-gray-700 hover:via-gray-500 hover:to-white bg-clip-text text-transparent"
+                className="font-bold text-white hover:text-gray-500"
               >
                 <p>Stack</p>
               </a>
