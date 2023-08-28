@@ -26,13 +26,7 @@ export default async function Home() {
       <a href="#nav">
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
-            <Image
-              className="animate-bounce mx-auto h-10 w-10 cursor-pointer invert"
-              src="/arrow.png"
-              width={50}
-              height={50}
-              alt="arrow"
-            />
+            <div className="h-0 w-0 border-x-8 border-x-transparent border-b-[16px] border-b-blue-500 animate-bounce"></div>
           </div>
         </footer>
       </a>
