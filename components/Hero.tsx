@@ -30,7 +30,7 @@ function Hero() {
         />
       </span>
       <p className="mt-10 text-md sm:text-xl">
-        I&apos;m a front-end web developer currently based in Hong Kong.
+        Front-end web developer currently based in Hong Kong.
       </p>
       <p className="mt-6 text-md sm:text-xl">Previously at LinkedIn Corp.</p>
       <div className="mt-6" id="hover">
@@ -74,9 +74,18 @@ function Hero() {
         />
       </div>
 
-      <p className="mt-6 text-md sm:text-xl animate-pulse underline underline-offset-4">
-        Available for immediate hire.
+      <p className="mt-6 text-sm sm:text-md italic">
+        "Leo is great to work with and knows what he's doing. Extremely flexible
+        and patient. Leo consulted on an e-comm project, and the process and
+        organization was wonderful."
       </p>
+      <p className="mt-2 text-xs sm:text-sm">
+        - Nitjasin, Manager at Aquatics Inc.
+      </p>
+
+      {/* <p className="mt-6 text-md sm:text-xl animate-pulse underline underline-offset-4">
+        Available for immediate hire.
+      </p> */}
 
       <div className="mt-8">
         <a
