@@ -75,9 +75,9 @@ function Hero() {
       </div>
 
       <p className="mt-6 text-sm sm:text-md italic">
-        "Leo is great to work with and knows what he's doing. Extremely flexible
-        and patient. Leo consulted on an e-comm project, and the process and
-        organization was wonderful."
+        &quot;Leo is great to work with and knows what he&apos;s doing.
+        Extremely flexible and patient. Leo consulted on an e-comm project, and
+        the process and organization was wonderful.&quot;
       </p>
       <p className="mt-2 text-xs sm:text-sm">
         - Nitjasin, Manager at Aquatics Inc.
